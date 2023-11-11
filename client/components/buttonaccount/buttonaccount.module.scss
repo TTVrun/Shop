@@ -1,0 +1,34 @@
+.wrapper {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    min-width: 94px;
+    margin-left: 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    // background-color: rgba($color: #fff, $alpha: 1);
+    // color: rgba($color: #349fe2, $alpha: 0.8);
+    color: #fff;
+    background-color: transparent;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #fff;
+    // border-top: 2px solid #fff;
+
+    &:hover {
+        color: #ccc;
+    }
+
+    &:active {
+        // border-top: 2px solid #fff;
+        border-bottom: 0px solid #000;
+
+        transform: translateX(2px);
+    }
+}

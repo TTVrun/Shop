@@ -1,0 +1,45 @@
+.wrapper {
+    color: #fff;
+    padding: 4px 20px;
+    cursor: pointer;
+    position: relative;
+
+    .icon {
+        font-size: 26px;
+        position: relative;
+
+        .number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            font-size: 14px;
+            top: -2px;
+            right: -6px;
+            position: absolute;
+            background-color: red;
+        }
+    }
+
+    &::after {
+        content: '';
+        top: 7px;
+        right: 0;
+        width: 0.5px;
+        height: 28px;
+        background-color: #fff;
+        position: absolute;
+    }
+    &::before {
+        content: '';
+        left: 0;
+        top: 7px;
+        width: 1px;
+        height: 28px;
+        background-color: #fff;
+        position: absolute;
+    }
+}
