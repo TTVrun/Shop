@@ -7,13 +7,24 @@ import Link from 'next/link'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { InputAccount } from '@/components/inputaccount'
 import { CheckError, CommonData, CommonError, SubmitData } from '@/types/account'
-import { errorMethod, invalidPathAccount, listKeyName, messagePath } from '@/constant/account'
-import { signinApi, signupApi } from '@/apis/user'
+import { errorMethod, invalidPathAccount, listKeyName, messagePath, namePath } from '@/constant/account'
+import { forgetpasswordApi, signinApi, signupApi } from '@/apis/user'
+import { Modal } from '@/components/modal'
+import { ResponseSuccess, ResponseSuccessSignin } from '@/types/api'
+import { useAppDispatch } from '@/redux/hooks'
+import { signin } from '@/redux/features/userSlide'
+import path from '@/constant/path'
 
 const Account = ({ params }: { params: { status: string } }) => {
     const isValidPath = invalidPathAccount.includes(params.status)
+    const dispatch = useAppDispatch()
     const [toggleSubmit, setToggleSubmit] = useState<boolean>(false)
     const [isSubmit, setIsSubmit] = useState<boolean>(false)
+    const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
+    const [isIconSuccess, setIsIconSuccess] = useState<boolean>(true)
+    const [textModal, setTextModal] = useState<string>('')
+    const [buttonText, setButtonText] = useState<string>('Back home')
+    const [buttonLink, setButtonLink] = useState<string>(path.HOME)
     const [commonData, setCommonData] = useState<CommonData>({
         name: '',
         username: '',
@@ -56,17 +67,40 @@ const Account = ({ params }: { params: { status: string } }) => {
 
     useEffect(() => {
         const fetchSignupApi = async (data: SubmitData) => {
-            const response = await signupApi(data)
-            console.log(response)
+            const response: ResponseSuccess = await signupApi(data)
+            setButtonText(namePath.SIGN_IN)
+            setButtonLink(path.SIGN_IN)
+            setIsOpenModal(true)
+            setTextModal(response.mes)
+            if (!response.success) {
+                setIsIconSuccess(false)
+            } else {
+                setIsIconSuccess(true)
+            }
         }
         const fetchSigninApi = async (data: SubmitData) => {
-            const response = await signinApi(data)
-            console.log(response)
+            const response: ResponseSuccessSignin = await signinApi(data)
+            setIsOpenModal(true)
+            setTextModal(response.mes)
+            if (!response.success) {
+                setIsIconSuccess(false)
+            } else {
+                setIsIconSuccess(true)
+                dispatch(signin(response.token))
+            }
         }
-        // const fetchSignupApi = async (data: SubmitData) => {
-        //     const response = await signupApi(data)
-        //     console.log(response)
-        // }
+        const fetchForgetpassword = async (data: SubmitData) => {
+            const response: ResponseSuccess = await forgetpasswordApi(data)
+            setButtonText(namePath.SIGN_IN)
+            setButtonLink(path.SIGN_IN)
+            setIsOpenModal(true)
+            setTextModal(response.mes)
+            if (!response.success) {
+                setIsIconSuccess(false)
+            } else {
+                setIsIconSuccess(true)
+            }
+        }
 
         if (isSubmit) {
             const checkError: CheckError = { ...commonError }
@@ -80,12 +114,14 @@ const Account = ({ params }: { params: { status: string } }) => {
                     delete submitData.name
                     delete submitData.email
                 }
-                console.log(submitData)
                 if (params.status === invalidPathAccount[0]) {
-                    const response = fetchSigninApi(submitData)
+                    fetchSigninApi(submitData)
                 }
                 if (params.status === invalidPathAccount[1]) {
-                    const response = fetchSignupApi(submitData)
+                    fetchSignupApi(submitData)
+                }
+                if (params.status === invalidPathAccount[2]) {
+                    fetchForgetpassword(submitData)
                 }
             }
         }
@@ -100,7 +136,7 @@ const Account = ({ params }: { params: { status: string } }) => {
                     <div className={styles.left}>
                         {/* Back home button */}
                         <div className={styles.header}>
-                            <Link href="/" className={styles.btnheader}>
+                            <Link href={path.HOME} className={styles.btnheader}>
                                 <i className={styles.icon}>
                                     <AiOutlineArrowLeft />
                                 </i>
@@ -129,17 +165,17 @@ const Account = ({ params }: { params: { status: string } }) => {
                             )}
                             {/* Button to navigation */}
                             {!(params.status === invalidPathAccount[0]) && (
-                                <Link href="/account/signin" className={styles.btn}>
+                                <Link href={path.SIGN_IN} className={styles.btn}>
                                     Sing in
                                 </Link>
                             )}
                             {!(params.status === invalidPathAccount[1]) && (
-                                <Link href="/account/signup" className={styles.btn}>
+                                <Link href={path.SIGN_UP} className={styles.btn}>
                                     Sing up
                                 </Link>
                             )}
                             {!(params.status === invalidPathAccount[2]) && (
-                                <Link href="/account/forgetpassword" className={styles.btn}>
+                                <Link href={path.FOETGET_PASSWORD} className={styles.btn}>
                                     Forget passwrod
                                 </Link>
                             )}
@@ -195,6 +231,14 @@ const Account = ({ params }: { params: { status: string } }) => {
                             </form>
                         </div>
                     </div>
+                    <Modal
+                        isOpen={isOpenModal}
+                        setOpen={setIsOpenModal}
+                        text={textModal}
+                        isSuccess={isIconSuccess}
+                        buttonText={buttonText}
+                        butttonLink={buttonLink}
+                    />
                 </div>
             ) : (
                 <NotFoundStyle />

@@ -8,7 +8,7 @@ export const signupApi = async (data: SubmitData) => {
 
 export const signinApi = async (data: SubmitData) => {
     const response = await instance.post('user/signin', data)
-    return response
+    return response.data
 }
 
 export const forgetpasswordApi = async (data: SubmitData) => {

@@ -52,7 +52,6 @@ const login = async (req, res, next) => {
         if (user) {
             //check password and generate token and refresh token
             if (await user.isCorrectPassword(password)) {
-                console.log(user._id)
                 // create token and refresh token
                 const token = generateAccessToken(user._id, user.role)
                 const refreshToken = generateRefreshToken(user._id)
@@ -68,7 +67,7 @@ const login = async (req, res, next) => {
                     { $push: { notification: { $each: [notification._id], $position: 0 } } },
                     { new: true }
                 )
-                //
+
                 return res.json({
                     success: true,
                     mes: 'Login is successfully',
