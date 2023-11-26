@@ -1,7 +1,4 @@
-// import { persistReducer } from 'redux-persist'
 import { persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist'
-
-// import couterReducer from './features/couterSlide'
 import userReducer from './features/userSlide'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import storage from 'redux-persist/lib/storage'

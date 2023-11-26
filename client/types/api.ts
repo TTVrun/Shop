@@ -1,3 +1,5 @@
+import { InfoUser } from './data'
+
 export interface ResponseSuccessSignin {
     success: boolean
     mes: string
@@ -7,4 +9,9 @@ export interface ResponseSuccessSignin {
 export interface ResponseSuccess {
     success: boolean
     mes: string
+}
+
+export interface TGetCurrent {
+    success: boolean
+    data: InfoUser
 }

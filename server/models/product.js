@@ -25,6 +25,11 @@ var productSchema = new mongoose.Schema(
         images: {
             type: Array
         },
+        sumLike: {
+            type: Number,
+            default: 0
+        },
+        likeBy: [{ type: mongoose.Types.ObjectId, ref: 'User' }],
         category: {
             type: String,
             required: true

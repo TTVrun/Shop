@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border: none;
+
+    .header {
+        width: 1200px;
+        padding: 15px 0;
+
+        .title {
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #151515;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .link {
+            color: #1c1d1d;
+            font-size: 15px;
+            font-weight: 400;
+
+            &:hover {
+                color: #349fe2;
+            }
+        }
+    }
+}

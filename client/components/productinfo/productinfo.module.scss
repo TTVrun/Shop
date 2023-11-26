@@ -1,0 +1,45 @@
+.wrapper {
+    width: 100%;
+
+    .wbutton {
+        width: 100%;
+        display: flex;
+        gap: 6px;
+
+        .btn {
+            font-size: 15px;
+            background-color: #f1f1f1;
+            padding: 12px 20px;
+            border: 1px solid #ebebeb;
+            outline: none;
+            color: #505050;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+
+        .active {
+            background-color: #fff;
+            color: #000;
+            border-bottom-color: transparent;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid red;
+        border: 1px solid #ebebeb;
+        margin: -1px 0 0;
+        font-size: 14px;
+        color: #505050;
+        gap: 3px;
+    }
+}

@@ -152,9 +152,12 @@ const refreshToken = async (req, res, next) => {
 const getCurrent = async (req, res, next) => {
     try {
         const user = req.user
-        const UserCurrent = await User.findById(user._id).select('-password -role -refreshtoken').populate({
-            path: 'notification'
-        })
+        const UserCurrent = await User.findById(user._id)
+            .select('-password -role -refreshToken -updatedAt -createdAt -username')
+            .populate({
+                path: 'notification',
+                select: '-__v -key'
+            })
 
         //
         return res.json({

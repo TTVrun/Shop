@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './search.module.scss'
 import { BsSearch } from 'react-icons/bs'
+import { memo } from 'react'
 
 const Search = () => {
     return (
@@ -13,4 +14,4 @@ const Search = () => {
     )
 }
 
-export default Search
+export default memo(Search)

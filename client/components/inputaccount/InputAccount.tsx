@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, memo } from 'react'
 import styles from './inputaccount.module.scss'
 import { CommonData, CommonError } from '@/types/account'
 import { MdClear } from 'react-icons/md'
@@ -152,4 +152,4 @@ const InputAccount = ({
     )
 }
 
-export default InputAccount
+export default memo(InputAccount)

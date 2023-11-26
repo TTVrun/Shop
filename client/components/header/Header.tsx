@@ -1,16 +1,17 @@
-import React, { useState } from 'react'
+import React, { memo } from 'react'
 import styles from './header.module.scss'
 import logo from '@/assets/images/logo.png'
 import Image from 'next/image'
 import { Search } from '../search'
 import { Action } from '../action'
 import Link from 'next/link'
+import { path } from '@/constant/common'
 
-const Header = () => {
+const Header = async () => {
     return (
         <div className={styles.wrapper}>
             <header className={styles.header}>
-                <Link href="/" className={styles.logo}>
+                <Link href={path.HOME} className={styles.logo}>
                     <Image priority className={styles.image} src={logo} width={234} height={24} alt="Logo" />
                 </Link>
                 <div className={styles.search}>
@@ -24,4 +25,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default memo(Header)

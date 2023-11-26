@@ -1,0 +1,62 @@
+.wrapper {
+    width: 100%;
+    margin-top: 68px;
+
+    .title {
+        font-size: 18px;
+        padding: 0 0 5px;
+        font-weight: 600;
+        border-bottom: 2px solid #349fe2;
+        margin-bottom: 28px;
+    }
+
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .product {
+            border: 1px solid #ebebeb;
+            background-color: #fff;
+            padding: 15px;
+            position: relative;
+
+            &:hover {
+                border-color: rgba($color: #000000, $alpha: 0.4);
+
+                .content {
+                    opacity: 0.8;
+                }
+            }
+            .img {
+                display: block;
+                margin-bottom: 36px;
+            }
+
+            .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding-bottom: 12px;
+
+                .name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #2b3743;
+                }
+
+                .like {
+                    font-size: 14px;
+                    color: #505050;
+                }
+
+                .price {
+                    font-size: 16px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

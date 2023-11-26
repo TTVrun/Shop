@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './notfound.module.scss'
 import Link from 'next/link'
+import { memo } from 'react'
 
 const NotFoundStyle = () => {
     return (
@@ -16,4 +17,4 @@ const NotFoundStyle = () => {
     )
 }
 
-export default NotFoundStyle
+export default memo(NotFoundStyle)

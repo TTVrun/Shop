@@ -1,10 +1,12 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { useEffect, memo } from 'react'
 import styles from './modal.module.scss'
 import { TiTick } from 'react-icons/ti'
 import { BsExclamationLg } from 'react-icons/bs'
 import { useRouter } from 'next/navigation'
+import { path } from '@/constant/common'
+import { namePath } from '@/constant/common'
 
 interface Props {
     isOpen: boolean
@@ -15,7 +17,14 @@ interface Props {
     text: string
 }
 
-const Modal = ({ isOpen, setOpen, text, isSuccess = true, butttonLink = '/', buttonText = 'Back home' }: Props) => {
+const Modal = ({
+    isOpen,
+    setOpen,
+    text,
+    isSuccess = true,
+    butttonLink = path.HOME,
+    buttonText = namePath.HOME
+}: Props) => {
     const router = useRouter()
     const handleClickClose = () => {
         setOpen(false)
@@ -67,7 +76,7 @@ const Modal = ({ isOpen, setOpen, text, isSuccess = true, butttonLink = '/', but
                             <button onClick={handleClickClose} className={styles.button}>
                                 Ok, close
                             </button>
-                            {butttonLink === '/' ? (
+                            {butttonLink === path.HOME ? (
                                 <button onClick={handleClickButtonDirection} className={styles.button}>
                                     {buttonText}
                                 </button>
@@ -84,4 +93,4 @@ const Modal = ({ isOpen, setOpen, text, isSuccess = true, butttonLink = '/', but
     )
 }
 
-export default Modal
+export default memo(Modal)

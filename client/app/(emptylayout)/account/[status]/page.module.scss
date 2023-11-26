@@ -7,88 +7,9 @@
 }
 
 .left {
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    flex-direction: column;
     grid-column: 1/2;
     background-color: #349fe2;
     color: #fff;
-
-    .header {
-        margin-top: 4px;
-        height: 34px;
-        display: flex;
-        flex-direction: row;
-
-        .btnheader {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            cursor: pointer;
-            padding: 0 14px;
-
-            .icon {
-                display: flex;
-                align-items: center;
-                font-size: 22px;
-                margin-right: 4px;
-            }
-
-            .content {
-                font-size: 16px;
-            }
-
-            &:hover {
-                opacity: 0.8;
-            }
-        }
-    }
-
-    .wbottom {
-        flex: 1 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 14px;
-
-        .title {
-            font-size: 24px;
-            text-transform: capitalize;
-            font-weight: 600;
-        }
-
-        .subtitle {
-            padding: 0 36px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 400;
-            opacity: 0.9;
-            margin-bottom: 28px;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 180px;
-            background-color: transparent;
-            border: 3px solid #fff;
-            color: #fff;
-            font-size: 18px;
-            padding: 8px 12px;
-            cursor: pointer;
-            font-weight: 400;
-            border-radius: 24px;
-
-            &:hover {
-                background-color: rgba($color: #fff, $alpha: 1);
-                color: #349fe2;
-                opacity: 0.9;
-            }
-        }
-    }
 }
 
 .right {
@@ -126,20 +47,6 @@
                 color: #fff;
                 margin-bottom: 24px;
             }
-            // .submit {
-            //     font-size: 18px;
-            //     background-color: #349fe2;
-            //     outline: none;
-            //     border: 1px solid #ffffff;
-            //     padding: 14px 32px;
-            //     border-radius: 8px;
-            //     color: #0038ff;
-            //     font-weight: 600;
-            //     text-transform: uppercase;
-            //     cursor: pointer;
-            //     margin-top: 8px;
-            //     letter-spacing: 1px;
-            // }
             .submit {
                 margin-top: 12px;
                 text-transform: uppercase;

@@ -3,6 +3,7 @@ const User = require('../models/user')
 const Comment = require('../models/comment')
 const slugify = require('slugify')
 const { populateReliesProduct } = require('../utils/populate')
+const data = require('../../data/products.json')
 
 //Chưa Hoàn chỉnh
 const createProduct = async (req, res, next) => {
@@ -31,8 +32,8 @@ const getProduct = async (req, res, next) => {
         const populatedProduct = await populateReliesProduct(product)
         //Return data
         return res.json({
-            success: populatedProduct ? true : false,
-            data: populatedProduct ? populatedProduct : null
+            success: product ? true : false,
+            data: product ? product : null
         })
     } catch (error) {
         next(error)
@@ -127,10 +128,87 @@ const deleteProduct = async (req, res, next) => {
     }
 }
 
+const getProductsByCategory = async (req, res, next) => {
+    try {
+        const { category } = req.params
+        const products = await Product.find({ category }).select('-createdAt -__V -updatedAt')
+        return res.json({
+            success: products ? true : false,
+            data: products ? products : []
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
+const relatedProducts = async (req, res, next) => {
+    try {
+        const { pid, category } = req.params
+
+        const products = await Product.find({ category: category, _id: { $ne: pid } }).select(
+            '_id title variations images sumLike category slug'
+        )
+        const tempIndex = []
+        const relatedProducts = []
+
+        while (tempIndex.length <= 3) {
+            const number = Math.floor(Math.random() * products.length)
+            if (!tempIndex.includes(number)) {
+                tempIndex.push(number)
+                relatedProducts.push(products[number])
+            }
+        }
+
+        return res.json({
+            success: true,
+            data: relatedProducts
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
+const deleteProductByCategory = async (req, res, next) => {
+    try {
+        const category = 'smartphone'
+        await Product.deleteMany({ category })
+
+        return res.send('oke')
+    } catch (error) {
+        next(error)
+    }
+}
+
+const insert = async (req, res, next) => {
+    try {
+        data.smartphone.forEach(async (item) => {
+            await Product.create({
+                title: item.title,
+                slug: slugify(item.title.toLowerCase()),
+                images: item.images,
+                category: item.category,
+                variations: item.variations,
+                description: item.information[0],
+                warranty: item.information[1],
+                delivery: item.information[2],
+                payment: item.information[3]
+            })
+        })
+
+        return res.send('Oke')
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
     createProduct,
     getProduct,
     getProducts,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getProductsByCategory,
+    relatedProducts,
+    deleteProductByCategory,
+    insert
 }

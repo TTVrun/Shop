@@ -1,14 +1,15 @@
 {
     "smartphone": [
         {
+            "title": "Google Pixel",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/u3_1024x1024.jpg?v=1482568962"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/u2_1024x1024.jpg?v=1482568962",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/google-pixel-04_1024x1024.jpg?v=1482568962",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/google-pixel-02_1024x1024.jpg?v=1482568962",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/google-pixel-03_1024x1024.jpg?v=1482568962",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/gsmarena_020_1024x1024.jpg?v=1482568962",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/gsmarena_023_1024x1024.jpg?v=1482568962"
             ],
             "variations": [
                 {
@@ -64,10 +65,11 @@
             "category": "smartphone"
         },
         {
+            "title": "HTC 10",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/HTC-10-1_1024x1024.jpg?v=1482744716",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/HTC-10-1_1024x1024.jpg?v=1482744716",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/HTC-10-1_1024x1024.jpg?v=1482744716"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/htc-10-5_1024x1024.jpg?v=1482744716",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/htc-10-r_1024x1024.jpg?v=1482744716"
             ],
             "variations": [
                 {
@@ -123,12 +125,13 @@
             "category": "smartphone"
         },
         {
+            "title": "iPhone 7",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/1_83bd7ced-da1e-4701-afac-cc3c61ea1a51_1024x1024.jpg?v=1482569483",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/2_1024x1024.jpg?v=1482569483",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/3_1024x1024.jpg?v=1482569483",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/4_1024x1024.jpg?v=1482569483"
             ],
             "variations": [
                 {
@@ -189,12 +192,13 @@
             "category": "smartphone"
         },
         {
+            "title": "LG G5",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/lg-g5-3_1024x1024.jpg?v=1482744904",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/lg-g5-01_1024x1024.jpg?v=1482744904",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/lg-g5-1_1024x1024.jpg?v=1482744904",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/lg-g5-02_1024x1024.jpg?v=1482744904"
             ],
             "variations": [
                 {
@@ -255,11 +259,12 @@
             "category": "smartphone"
         },
         {
+            "title": "Samsung Galaxy J7 Prime",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung_galaxys7_heroCard_foreground_1024x1024.png?v=1482745077",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s6_1024x1024.png?v=1482745077",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s6-edge-plus-black-sapphire-spin.0001_1024x1024.png?v=1482745077"
             ],
             "variations": [
                 {
@@ -315,11 +320,12 @@
             "category": "smartphone"
         },
         {
+            "title": "Samsung Galaxy S7",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s7-and-s7-edge-unveiled-with-refined-design-performance-boost-500729-4_1024x1024.jpg?v=1482745077",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s7-and-s7-edge-unveiled-with-refined-design-performance-boost-500729-4_1024x1024.jpg?v=1482745077",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s7-and-s7-edge-unveiled-with-refined-design-performance-boost-500729-4_1024x1024.jpg?v=1482745077",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-s7-and-s7-edge-unveiled-with-refined-design-performance-boost-500729-4_1024x1024.jpg?v=1482745077"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-j7-prime-1_1024x1024.jpg?v=1482568483",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-j7-prime-2_1024x1024.jpg?v=1482568483",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/samsung-galaxy-j7-prime-3_1024x1024.jpg?v=1482568483"
             ],
             "variations": [
                 { "internal": "Large", "color": [], "prices": [{ "price": "899", "option": "Original Price" }] }
@@ -366,11 +372,12 @@
             "category": "smartphone"
         },
         {
+            "title": "Sony Xperia XA",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/xperia-xa-white-D1-hero-image-35f68ba1669ba23b989e7519e4a1660d_1024x1024.jpg?v=1482745468",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/xperia-xa-white-D1-hero-image-35f68ba1669ba23b989e7519e4a1660d_1024x1024.jpg?v=1482745468",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/xperia-xa-white-D1-hero-image-35f68ba1669ba23b989e7519e4a1660d_1024x1024.jpg?v=1482745468",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/xperia-xa-white-D1-hero-image-35f68ba1669ba23b989e7519e4a1660d_1024x1024.jpg?v=1482745468"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/sony-xperia-xz_1024x1024.jpg?v=1482745468",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/gsmarena_015_1024x1024.jpg?v=1482745468",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/sony-xperia-xz1_1024x1024.jpg?v=1482745468"
             ],
             "variations": [
                 {
@@ -426,10 +433,11 @@
             "category": "smartphone"
         },
         {
+            "title": "Vivo V5",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_31cc1c0e-ac34-4c8e-946a-a5e30acf6b1a_1024x1024.jpg?v=1482746351",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_31cc1c0e-ac34-4c8e-946a-a5e30acf6b1a_1024x1024.jpg?v=1482746351",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_31cc1c0e-ac34-4c8e-946a-a5e30acf6b1a_1024x1024.jpg?v=1482746351"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/vivo-v5-1_1024x1024.jpg?v=1482746361",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/vivo-v5-2_1024x1024.jpg?v=1482746361"
             ],
             "variations": [
                 {
@@ -480,11 +488,12 @@
             "category": "smartphone"
         },
         {
+            "title": "Xiaomi Mi 5",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1482747190",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1482747190",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1482747190",
-                "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1024x1024.jpg?v=1482747190"
+                "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1024x1024.jpg?v=1482747190",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/z2_1024x1024.jpg?v=1482747190",
+                "https://digital-world-store.myshopify.com/cdn/shop/products/z3_1024x1024.jpg?v=1482747190"
             ],
             "variations": [
                 {
@@ -547,6 +556,7 @@
     ],
     "tablet": [
         {
+            "title": "Apple iPad Air 2",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
@@ -617,6 +627,7 @@
             "category": "tablet"
         },
         {
+            "title": "Apple iPad Pro",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss5_1024x1024.jpg?v=1482766131",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss5_1024x1024.jpg?v=1482766131",
@@ -683,6 +694,7 @@
             "category": "tablet"
         },
         {
+            "title": "Asus ZenPad 3 8.0 Z581KL",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss9_1024x1024.jpg?v=1482764049",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss9_1024x1024.jpg?v=1482764049",
@@ -747,6 +759,7 @@
             "category": "tablet"
         },
         {
+            "title": "Huawei MediaPad T1 7.0",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
@@ -807,6 +820,7 @@
             "category": "tablet"
         },
         {
+            "title": "Lenovo Yoga Tab 3 Plus",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-2_1024x1024.jpg?v=1482826110",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-2_1024x1024.jpg?v=1482826110"
@@ -870,6 +884,7 @@
             "category": "tablet"
         },
         {
+            "title": "LG G Pad III 10.1 FHD",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss8_1024x1024.jpg?v=1482763734",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss8_1024x1024.jpg?v=1482763734",
@@ -929,6 +944,7 @@
             "category": "tablet"
         },
         {
+            "title": "Samsung Galaxy Tab S 8.4 LTE",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-11_1024x1024.jpg?v=1482826857",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-11_1024x1024.jpg?v=1482826857",
@@ -985,6 +1001,7 @@
             "category": "tablet"
         },
         {
+            "title": "Sony Xperia Z4 Tablet LTE",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1_1024x1024.jpg?v=1482825810",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1_1024x1024.jpg?v=1482825810",
@@ -1048,6 +1065,7 @@
     ],
     "laptop": [
         {
+            "title": "Acer Aspire E5",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_00d0ce5d-e30b-4a9a-bffd-357614f67b8d_1024x1024.jpg?v=1483452652",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_00d0ce5d-e30b-4a9a-bffd-357614f67b8d_1024x1024.jpg?v=1483452652",
@@ -1107,6 +1125,7 @@
             "category": "laptop"
         },
         {
+            "title": "Apple Macbook Air",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_4_1024x1024.jpg?v=1483453925",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_4_1024x1024.jpg?v=1483453925",
@@ -1166,6 +1185,7 @@
             "category": "laptop"
         },
         {
+            "title": "Apple Macbook Pro 13in",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z6_1_1024x1024.jpg?v=1482941283",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z6_1_1024x1024.jpg?v=1482941283",
@@ -1225,6 +1245,7 @@
             "category": "laptop"
         },
         {
+            "title": "Asus RoG G752VM",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
@@ -1279,6 +1300,7 @@
             "category": "laptop"
         },
         {
+            "title": "Dell Inspiron 7460",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/x2_1024x1024.jpg?v=1483026378",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/x2_1024x1024.jpg?v=1483026378",
@@ -1348,6 +1370,7 @@
             "category": "laptop"
         },
         {
+            "title": "Dell Vostro 5468",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
@@ -1417,6 +1440,7 @@
             "category": "laptop"
         },
         {
+            "title": "HP Pavilion 15 AU072TX",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_877559ca-7315-44b0-9f7f-f393bd0808bd_1024x1024.jpg?v=1483452011",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_877559ca-7315-44b0-9f7f-f393bd0808bd_1024x1024.jpg?v=1483452011",
@@ -1488,6 +1512,7 @@
     ],
     "accessories": [
         {
+            "title": "Apple Watch Edition Series 2",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1482827342",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-123_1024x1024.jpg?v=1482827342"
@@ -1546,6 +1571,7 @@
             "category": "accessories"
         },
         {
+            "title": "JBL Charge 3",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
@@ -1599,6 +1625,7 @@
             "category": "accessories"
         },
         {
+            "title": "Logitech MX anywhere 2",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z3_5229b270-7b1c-4b40-8100-204f96c43f88_1024x1024.jpg?v=1482852162",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z3_5229b270-7b1c-4b40-8100-204f96c43f88_1024x1024.jpg?v=1482852162",
@@ -1653,6 +1680,7 @@
             "category": "accessories"
         },
         {
+            "title": "Logitech Wireless Keyboard MK240 Nano",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-145_1024x1024.jpg?v=1482827849",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-145_1024x1024.jpg?v=1482827849",
@@ -1720,6 +1748,7 @@
             "category": "accessories"
         },
         {
+            "title": "Samsung Gear S3",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-145_1024x1024.jpg?v=1482827849",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-145_1024x1024.jpg?v=1482827849",
@@ -1774,6 +1803,7 @@
             "category": "accessories"
         },
         {
+            "title": "Motorola Moto 360 (2nd gen)",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-189_1024x1024.jpg?v=1482830978",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-189_1024x1024.jpg?v=1482830978",
@@ -1835,6 +1865,7 @@
             "category": "accessories"
         },
         {
+            "title": "Samsung Gear VR",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_1024x1024.jpg?v=1482833635",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_1024x1024.jpg?v=1482833635",
@@ -1903,6 +1934,7 @@
             "category": "accessories"
         },
         {
+            "title": "Sennheiser EZX 80",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
@@ -1974,6 +2006,7 @@
             "category": "accessories"
         },
         {
+            "title": "USB SanDisk",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1482853062",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z4_1b6e3a93-aa84-4a15-8324-deab9b1d4711_1024x1024.jpg?v=1482853062"
@@ -2040,6 +2073,7 @@
     ],
     "camera": [
         {
+            "title": "Apple iPad Air 2",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/SS7_1_1024x1024.jpg?v=1482764410",
@@ -2110,6 +2144,7 @@
             "category": "camera"
         },
         {
+            "title": "Apple Macbook Air",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_4_1024x1024.jpg?v=1483453925",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_4_1024x1024.jpg?v=1483453925",
@@ -2174,6 +2209,7 @@
             "category": "camera"
         },
         {
+            "title": "Apple Macbook Pro 13in",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z6_1_1024x1024.jpg?v=1482941283",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z6_1_1024x1024.jpg?v=1482941283",
@@ -2238,6 +2274,7 @@
             "category": "camera"
         },
         {
+            "title": "Asus RoG G752VM",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
@@ -2292,6 +2329,7 @@
             "category": "camera"
         },
         {
+            "title": "HP ProBook 450",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
@@ -2356,6 +2394,7 @@
             "category": "camera"
         },
         {
+            "title": "Huawei MediaPad T1 7.0",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
@@ -2421,6 +2460,7 @@
             "category": "camera"
         },
         {
+            "title": "JBL Charge 3",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
@@ -2476,6 +2516,7 @@
     ],
     "television": [
         {
+            "title": "Apple iPad Pro",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss5_1024x1024.jpg?v=1482766131",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss5_1024x1024.jpg?v=1482766131",
@@ -2542,6 +2583,7 @@
             "category": "television"
         },
         {
+            "title": "Asus RoG G752VM",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_1_33133681-0515-48fa-a6ee-fce4fc68afea_1024x1024.jpg?v=1482940181",
@@ -2596,6 +2638,7 @@
             "category": "television"
         },
         {
+            "title": "HP Pavilion 15 AU072TX",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/x2_1024x1024.jpg?v=1483026378",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/x2_1024x1024.jpg?v=1483026378",
@@ -2660,6 +2703,7 @@
             "category": "television"
         },
         {
+            "title": "Huawei MediaPad T1 7.0",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
@@ -2725,6 +2769,7 @@
             "category": "television"
         },
         {
+            "title": "Lenovo IdeaPad 110",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_877559ca-7315-44b0-9f7f-f393bd0808bd_1024x1024.jpg?v=1483452011",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_877559ca-7315-44b0-9f7f-f393bd0808bd_1024x1024.jpg?v=1483452011",
@@ -2789,6 +2834,7 @@
             "category": "television"
         },
         {
+            "title": "Logitech Wireless Keyboard MK240 Nano",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
@@ -2854,6 +2900,7 @@
     ],
     "printer": [
         {
+            "title": "HTC 10",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/HTC-10-1_1024x1024.jpg?v=1482744716",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/HTC-10-1_1024x1024.jpg?v=1482744716",
@@ -2913,6 +2960,7 @@
             "category": "printer"
         },
         {
+            "title": "iPhone 7",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
@@ -2979,6 +3027,7 @@
             "category": "printer"
         },
         {
+            "title": "LG G5",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/modular-type-1600x840_G5_M01C_1024x1024.jpg?v=1482744904",
@@ -3045,6 +3094,7 @@
             "category": "printer"
         },
         {
+            "title": "Logitech Wireless Keyboard MK240 Nano",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
@@ -3104,6 +3154,7 @@
             "category": "printer"
         },
         {
+            "title": "Samsung Galaxy J7 Prime",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/Untitled-1_1024x1024.jpg?v=1482568483",
@@ -3166,6 +3217,7 @@
     ],
     "speaker": [
         {
+            "title": "Asus ZenPad 3 8.0 Z581KL",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss9_1024x1024.jpg?v=1482764049",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss9_1024x1024.jpg?v=1482764049",
@@ -3225,6 +3277,7 @@
             "category": "speaker"
         },
         {
+            "title": "Dell Inspiron 7460",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z1_2_6dbdaadc-bd0c-454b-b4c1-395b60a2e2a7_1024x1024.jpg?v=1483452999",
@@ -3284,6 +3337,7 @@
             "category": "speaker"
         },
         {
+            "title": "Dell Vostro 5468",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/ss4_1024x1024.jpg?v=1482767130",
@@ -3349,6 +3403,7 @@
             "category": "speaker"
         },
         {
+            "title": "HP ProBook 450",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/iphone_1024x1024.jpg?v=1482569483",
@@ -3415,6 +3470,7 @@
             "category": "speaker"
         },
         {
+            "title": "Huawei MediaPad T1 7.0",
             "images": [
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
                 "https://digital-world-store.myshopify.com/cdn/shop/products/z2_2_1024x1024.jpg?v=1482834925",
