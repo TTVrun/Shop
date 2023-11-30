@@ -37,16 +37,15 @@ const Modal = ({
 
     useEffect(() => {
         if (isOpen) {
-            const bodyElement = document.querySelector('body')
-            if (bodyElement) {
-                bodyElement.style.height = '100vh'
-                bodyElement.style.overflowY = 'hidden'
+            if (document.body) {
+                // document.body.style.height = '100vh'
+                document.body.style.overflow = 'hidden'
             }
         } else {
             const bodyElement = document.querySelector('body')
             if (bodyElement) {
-                bodyElement.style.removeProperty('height')
-                bodyElement.style.removeProperty('overflowX')
+                // bodyElement.style.removeProperty('height')
+                bodyElement.style.removeProperty('overflow')
             }
         }
     }, [isOpen])

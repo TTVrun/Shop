@@ -58,3 +58,18 @@ export interface shortProduct {
     sumLike: number
     category: string
 }
+
+export interface TComment {
+    content: string
+    createdAt: string
+    commentBy: {
+        avatar: string
+        name: string
+        role: string
+        _id: string
+    }
+    updatedAt: string
+    __v: number
+    _id: string
+    replies: TComment[]
+}

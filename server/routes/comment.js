@@ -5,6 +5,6 @@ const { verifyAccessToken, isAdmin } = require('../middlewares/verifyToken')
 
 router.post('/:pid', verifyAccessToken, ctrls.commentProduct)
 router.post('/replycomment/:cid', verifyAccessToken, ctrls.replyComment)
-router.get('/:commentId', verifyAccessToken, ctrls.getComment)
+router.get('/:commentId', ctrls.getComment)
 
 module.exports = router

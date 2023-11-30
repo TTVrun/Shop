@@ -2,6 +2,7 @@ const User = require('../models/user')
 const Product = require('../models/product')
 const Comment = require('../models/comment')
 const { populateReplies } = require('../utils/populate')
+const comment = require('../models/comment')
 
 const commentProduct = async (req, res, next) => {
     try {
@@ -16,9 +17,17 @@ const commentProduct = async (req, res, next) => {
         //Create new comment for product
         const newComment = await Comment.create({ content, commentBy: _id })
         //update comment for product
-        await Product.findOneAndUpdate({ _id: pid }, { comment: newComment._id }, { new: true })
+        await Product.findOneAndUpdate(
+            { _id: pid },
+            { $push: { comment: { $each: [newComment._id], $position: 0 } } },
+            { new: true }
+        )
         //update history comment of user
-        await User.findOneAndUpdate({ _id }, { historyComment: newComment._id }, { new: true })
+        await User.findOneAndUpdate(
+            { _id },
+            { $push: { historyComment: { $each: [newComment._id], $position: 0 } } },
+            { new: true }
+        )
 
         return res.json({
             success: newComment ? true : false,
@@ -41,11 +50,15 @@ const replyComment = async (req, res, next) => {
         //Create new comment(Comment reply)
         const newComment = await Comment.create({ content, commentBy: _id })
         //Update histore comment of user who commented
-        await User.findOneAndUpdate({ _id }, { $push: { historyComment: newComment._id } }, { new: true })
+        await User.findOneAndUpdate(
+            { _id },
+            { $push: { historyComment: { $each: [newComment._id], $position: 0 } } },
+            { new: true }
+        )
         //Push reply comment into comment which was reped
         const updateComment = await Comment.findByIdAndUpdate(
             cid,
-            { $push: { replies: newComment._id } },
+            { $push: { replies: { $each: [newComment._id], $position: 0 } } },
             { new: true }
         )
         //Return data

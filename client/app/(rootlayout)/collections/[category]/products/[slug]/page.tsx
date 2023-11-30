@@ -183,7 +183,7 @@ const Product = () => {
                                     payment={data.payment}
                                 />
                             )}
-                            <Comments />
+                            <Comments pid={data._id} />
                             {data && <RelatedProducts category={data.category} pid={data._id} />}
                         </div>
                     </div>
