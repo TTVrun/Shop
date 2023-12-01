@@ -32,3 +32,9 @@ export const logoutApi = async () => {
     const response = await instance.get('user/logout')
     return response.data
 }
+
+export const changeAvatarApi = async (token: string, data: FormData) => {
+    instance.defaults.headers.common['Authorization'] = `Bearer ${token}`
+    const response = await instance.put('user/uploadimage', data)
+    return response.data
+}
