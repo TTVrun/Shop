@@ -36,6 +36,10 @@ var userSchema = new mongoose.Schema(
             type: String,
             default: 'user'
         },
+        accountBalance: {
+            type: Number,
+            default: 5000
+        },
         isBlock: {
             type: Boolean,
             default: false

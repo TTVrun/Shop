@@ -13,13 +13,11 @@ import { logout } from '@/redux/features/userSlide'
 import { useRouter } from 'next/navigation'
 
 interface Props {
-    avatar: string
     id: number
     setId: any
-    name: string
 }
 
-const NavPersonal: React.FC<Props> = ({ avatar, setId, id, name }: Props) => {
+const NavPersonal: React.FC<Props> = ({ setId, id }: Props) => {
     const dispatch = useAppDispatch()
     const router = useRouter()
 
@@ -55,13 +53,10 @@ const NavPersonal: React.FC<Props> = ({ avatar, setId, id, name }: Props) => {
                         <i className={styles.icon}>
                             <FaArrowLeft />
                         </i>
-                        <span className={styles.title}>Back home</span>
+                        <span className={styles.text}>Back home</span>
                     </Link>
                 </div>
-                <div className={styles.avatar}>
-                    <Image className={styles.image} src={avatar} height={80} width={80} alt="Avatar" />
-                    <div className={styles.name}>{name}</div>
-                </div>
+                <small className={styles.title}>User Profile</small>
                 <div className={styles.action}>
                     {pathPersonal.map((item) => {
                         return (

@@ -1,25 +1,26 @@
-import { IoPerson, IoNotifications } from 'react-icons/io5'
-import { MdShoppingCart } from 'react-icons/md'
-import { FaHeart } from 'react-icons/fa'
+import { IoPersonOutline } from 'react-icons/io5'
+import { FiShoppingCart } from 'react-icons/fi'
+import { FaRegHeart } from 'react-icons/fa6'
+import { IoMdNotificationsOutline } from 'react-icons/io'
 
 const pathPersonal = [
     {
-        icon: IoPerson,
+        icon: IoPersonOutline,
         title: 'Information',
         id: 0
     },
     {
-        icon: MdShoppingCart,
+        icon: FiShoppingCart,
         title: 'Card',
         id: 1
     },
     {
-        icon: FaHeart,
+        icon: FaRegHeart,
         title: 'Wish list',
         id: 2
     },
     {
-        icon: IoNotifications,
+        icon: IoMdNotificationsOutline,
         title: 'Notification',
         id: 3
     }

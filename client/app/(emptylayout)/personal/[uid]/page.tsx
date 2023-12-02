@@ -38,7 +38,7 @@ const Personal = ({ params: { uid } }: { params: { uid: string } }) => {
             {data && (
                 <>
                     <div className={styles.left}>
-                        <NavPersonal name={data.name} avatar={data.avatar} id={idShow} setId={setIdShow} />
+                        <NavPersonal id={idShow} setId={setIdShow} />
                     </div>
                     <div className={styles.right}>
                         {idShow === 0 && <UserInfo setToggleUpdate={setToggleUpdateData} userInfo={data} />}
