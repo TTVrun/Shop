@@ -138,5 +138,36 @@ const detailProduct = async (browser, url) => {
         console.log(error)
     }
 }
+const getProvince = async (browser, url) => {
+    try {
+        let page = await browser.newPage()
+        console.log('>> Open new tab')
+        await page.goto(url)
+        console.log('>> Access ' + url)
+        await page.waitForSelector('.page-Tỉnh_thành_Việt_Nam')
+        console.log('>> Website ready')
 
-module.exports = { scrapeCategory, listLinkProductScrape, detailProduct }
+        const listProvince = await page.$$eval(
+            '.mw-page-container > .mw-page-container-inner >.mw-content-container > #content > #bodyContent > #mw-content-text > .mw-parser-output > .wikitable > tbody > tr',
+            (els) => {
+                let data = els.map((el) => {
+                    return {
+                        provice: el.querySelectorAll('td')[1].innerText,
+                        abbreviatedCode: el.querySelectorAll('td')[2].innerText,
+                        licensePlates: el.querySelectorAll('td')[10].innerText
+                    }
+                })
+                return data
+            }
+        )
+        console.log(listProvince)
+
+        console.log('Close tab')
+        page.close()
+        return listProvince
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+module.exports = { scrapeCategory, listLinkProductScrape, detailProduct, getProvince }
