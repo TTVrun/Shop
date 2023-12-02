@@ -1,0 +1,318 @@
+{
+    "listCommune": [
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_An_Giang",
+            "province": "An Giang",
+            "code": "AGI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%C3%A0_R%E1%BB%8Ba_%E2%80%93_V%C5%A9ng_T%C3%A0u",
+            "province": "Bà Rịa – Vũng Tàu",
+            "code": "VTB"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%E1%BA%A1c_Li%C3%AAu",
+            "province": "Bạc Liêu",
+            "code": "BLI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%E1%BA%AFc_Giang",
+            "province": "Bắc Giang",
+            "code": "BGI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%E1%BA%AFc_K%E1%BA%A1n",
+            "province": "Bắc Kạn",
+            "code": "BKA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%E1%BA%AFc_Ninh",
+            "province": "Bắc Ninh",
+            "code": "BNI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%E1%BA%BFn_Tre",
+            "province": "Bến Tre",
+            "code": "BTR"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%C3%ACnh_D%C6%B0%C6%A1ng",
+            "province": "Bình Dương",
+            "code": "BDU"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%C3%ACnh_%C4%90%E1%BB%8Bnh",
+            "province": "Bình Định",
+            "code": "BDI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%C3%ACnh_Ph%C6%B0%E1%BB%9Bc",
+            "province": "Bình Phước",
+            "code": "BPC"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_B%C3%ACnh_Thu%E1%BA%ADn",
+            "province": "Bình Thuận",
+            "code": "BTN"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_C%C3%A0_Mau",
+            "province": "Cà Mau",
+            "code": "CMU"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Cao_B%E1%BA%B1ng",
+            "province": "Cao Bằng",
+            "code": "CBA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_th%C3%A0nh_ph%E1%BB%91_C%E1%BA%A7n_Th%C6%A1",
+            "province": "Cần Thơ",
+            "code": "CTH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_th%C3%A0nh_ph%E1%BB%91_%C4%90%C3%A0_N%E1%BA%B5ng",
+            "province": "Đà Nẵng",
+            "code": "DNG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_%C4%90%E1%BA%AFk_L%E1%BA%AFk",
+            "province": "Đắk Lắk",
+            "code": "DLA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_%C4%90%E1%BA%AFk_N%C3%B4ng",
+            "province": "Đắk Nông",
+            "code": "DKN"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_%C4%90i%E1%BB%87n_Bi%C3%AAn",
+            "province": "Điện Biên",
+            "code": "DBI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_%C4%90%E1%BB%93ng_Nai",
+            "province": "Đồng Nai",
+            "code": "DNA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_%C4%90%E1%BB%93ng_Th%C3%A1p",
+            "province": "Đồng Tháp",
+            "code": "DTP"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Gia_Lai",
+            "province": "Gia Lai",
+            "code": "GLA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%C3%A0_Giang",
+            "province": "Hà Giang",
+            "code": "HGI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%C3%A0_Nam",
+            "province": "Hà Nam",
+            "code": "HNA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_th%C3%A0nh_ph%E1%BB%91_H%C3%A0_N%E1%BB%99i",
+            "province": "Hà Nội",
+            "code": "HNO"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%C3%A0_T%C4%A9nh",
+            "province": "Hà Tĩnh",
+            "code": "HTI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%E1%BA%A3i_D%C6%B0%C6%A1ng",
+            "province": "Hải Dương",
+            "code": "HDU"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_th%C3%A0nh_ph%E1%BB%91_H%E1%BA%A3i_Ph%C3%B2ng",
+            "province": "Hải Phòng",
+            "code": "HPG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%E1%BA%ADu_Giang",
+            "province": "Hậu Giang",
+            "code": "HAG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%C3%B2a_B%C3%ACnh",
+            "province": "Hòa Bình",
+            "code": "HBI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh",
+            "province": "Hồ Chí Minh"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_H%C6%B0ng_Y%C3%AAn",
+            "province": "Hưng Yên",
+            "code": "HYE"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Kh%C3%A1nh_H%C3%B2a",
+            "province": "Khánh Hòa",
+            "code": "KHA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ki%C3%AAn_Giang",
+            "province": "Kiên Giang",
+            "code": "KGI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Kon_Tum",
+            "province": "Kon Tum",
+            "code": "KTU"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Lai_Ch%C3%A2u",
+            "province": "Lai Châu",
+            "code": "LCA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_L%E1%BA%A1ng_S%C6%A1n",
+            "province": "Lạng Sơn",
+            "code": "LSN"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_L%C3%A0o_Cai",
+            "province": "Lào Cai",
+            "code": "LCI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_L%C3%A2m_%C4%90%E1%BB%93ng",
+            "province": "Lâm Đồng",
+            "code": "LDG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Long_An",
+            "province": "Long An",
+            "code": "LAN"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Nam_%C4%90%E1%BB%8Bnh",
+            "province": "Nam Định",
+            "code": "NDH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ngh%E1%BB%87_An",
+            "province": "Nghệ An",
+            "code": "NAN"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ninh_B%C3%ACnh",
+            "province": "Ninh Bình",
+            "code": "NBI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ninh_Thu%E1%BA%ADn",
+            "province": "Ninh Thuận",
+            "code": "NTH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ph%C3%BA_Th%E1%BB%8D",
+            "province": "Phú Thọ",
+            "code": "PTH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ph%C3%BA_Y%C3%AAn",
+            "province": "Phú Yên",
+            "code": "PYE"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Qu%E1%BA%A3ng_B%C3%ACnh",
+            "province": "Quảng Bình",
+            "code": "QBI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Qu%E1%BA%A3ng_Nam",
+            "province": "Quảng Nam",
+            "code": "QNA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Qu%E1%BA%A3ng_Ng%C3%A3i",
+            "province": "Quảng Ngãi",
+            "code": "QNG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Qu%E1%BA%A3ng_Ninh",
+            "province": "Quảng Ninh",
+            "code": "QNH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Qu%E1%BA%A3ng_Tr%E1%BB%8B",
+            "province": "Quảng Trị",
+            "code": "QTR"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_S%C3%B3c_Tr%C4%83ng",
+            "province": "Sóc Trăng",
+            "code": "STR"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_S%C6%A1n_La",
+            "province": "Sơn La",
+            "code": "SLA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_T%C3%A2y_Ninh",
+            "province": "Tây Ninh",
+            "code": "TNI"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Th%C3%A1i_B%C3%ACnh",
+            "province": "Thái Bình",
+            "code": "TBH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Th%C3%A1i_Nguy%C3%AAn",
+            "province": "Thái Nguyên",
+            "code": "TNG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Thanh_H%C3%B3a",
+            "province": "Thanh Hóa",
+            "code": "THA"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Th%E1%BB%ABa_Thi%C3%AAn_Hu%E1%BA%BF",
+            "province": "Thừa Thiên Huế",
+            "code": "TTH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Ti%E1%BB%81n_Giang",
+            "province": "Tiền Giang",
+            "code": "TGG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Tr%C3%A0_Vinh",
+            "province": "Trà Vinh",
+            "code": "TVH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Tuy%C3%AAn_Quang",
+            "province": "Tuyên Quang",
+            "code": "TQU"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_V%C4%A9nh_Long",
+            "province": "Vĩnh Long",
+            "code": "VLG"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_V%C4%A9nh_Ph%C3%BAc",
+            "province": "Vĩnh Phúc",
+            "code": "VPH"
+        },
+        {
+            "link": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_x%C3%A3_thu%E1%BB%99c_t%E1%BB%89nh_Y%C3%AAn_B%C3%A1i",
+            "province": "Yên Bái",
+            "code": "YBA"
+        }
+    ]
+}

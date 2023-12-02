@@ -170,4 +170,103 @@ const getProvince = async (browser, url) => {
     }
 }
 
-module.exports = { scrapeCategory, listLinkProductScrape, detailProduct, getProvince }
+const getDistrict = async (browser, url) => {
+    try {
+        let page = await browser.newPage()
+        console.log('>> Open new tab')
+        await page.goto(url)
+        console.log('>> Access ' + url)
+        await page.waitForSelector('.page-Danh_sách_đơn_vị_hành_chính_cấp_huyện_của_Việt_Nam')
+        console.log('>> Website ready')
+
+        const listDistrict = await page.$$eval(
+            '.mw-page-container > .mw-page-container-inner >.mw-content-container > #content > #bodyContent > #mw-content-text > .mw-parser-output > .wikitable',
+            (els) => {
+                const data = [...els[0].querySelectorAll('tbody > tr')].map((el) => {
+                    return {
+                        district: el.querySelectorAll('td')[1].querySelector('a').innerText,
+                        province: el.querySelectorAll('td')[2].querySelector('a').innerText
+                    }
+                })
+                return data
+            }
+        )
+
+        console.log('Close tab')
+        page.close()
+        return listDistrict
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getLinkCommune = async (browser, url) => {
+    try {
+        let page = await browser.newPage()
+        console.log('>> Open new tab')
+        await page.goto(url)
+        console.log('>> Access ' + url)
+        await page.waitForSelector('.page-Thể_loại_Danh_sách_xã_tại_Việt_Nam')
+        console.log('>> Website ready')
+
+        const listLinkCommune = await page.$$eval(
+            '.mw-page-container > .mw-page-container-inner >.mw-content-container > #content > #bodyContent > #mw-content-text > .mw-category-generated > #mw-pages > .mw-content-ltr > .mw-category-columns > .mw-category-group > ul > li',
+            (els) => {
+                let data = els.map((el, index) => {
+                    return {
+                        link: el.querySelector('a').href,
+                        province: el.querySelector('a').innerText
+                    }
+                })
+                return data
+            }
+        )
+        console.log(listLinkCommune)
+
+        console.log('Close tab')
+        page.close()
+        return listLinkCommune
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getCommune = async (browser, url) => {
+    try {
+        let page = await browser.newPage()
+        console.log('>> Open new tab')
+        await page.goto(url)
+        console.log('>> Access ' + url)
+        await page.waitForSelector('body')
+        console.log('>> Website ready')
+
+        const listCommune = await page.$$eval(
+            '.mw-page-container > .mw-page-container-inner >.mw-content-container > #content > #bodyContent > #mw-content-text > .mw-parser-output > .wikitable > tbody > tr',
+            (els) => {
+                let data = els.map((el) => {
+                    return {
+                        commune: el.querySelectorAll('td')[0]?.innerText,
+                        district: el.querySelectorAll('td')[1]?.innerText
+                    }
+                })
+                return data
+            }
+        )
+
+        console.log('Close tab')
+        page.close()
+        return listCommune
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+module.exports = {
+    scrapeCategory,
+    listLinkProductScrape,
+    detailProduct,
+    getProvince,
+    getDistrict,
+    getLinkCommune,
+    getCommune
+}
