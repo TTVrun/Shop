@@ -79,18 +79,18 @@ const scrapeController = async (browserInstance) => {
         // })
 
         // await scrapers.getCommune(browser, listLinkCommune[1].link)
-        const data = {}
-        for (let i = 0; i < listCommune.listCommune.length; i++) {
-            const rs = await scrapers.getCommune(browser, listCommune.listCommune[i].link)
-            const code = listCommune.listCommune[i].code
-            data[code] = rs
-        }
-        fs.writeFile('xxx', JSON.stringify(data), (err) => {
-            if (err) {
-                console.log(err)
-            }
-            console.log('Successfully')
-        })
+        // const data = {}
+        // for (let i = 0; i < listCommune.listCommune.length; i++) {
+        //     const rs = await scrapers.getCommune(browser, listCommune.listCommune[i].link)
+        //     const code = listCommune.listCommune[i].code
+        //     data[code] = rs
+        // }
+        // fs.writeFile('xxx', JSON.stringify(data), (err) => {
+        //     if (err) {
+        //         console.log(err)
+        //     }
+        //     console.log('Successfully')
+        // })
     } catch (error) {
         console.log(error)
     }
