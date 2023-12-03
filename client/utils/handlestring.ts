@@ -26,3 +26,10 @@ export const email = (text: string) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     return emailRegex.test(text) ? null : 'Information must be email'
 }
+
+export const phone = (text: string) => {
+    var regex = /^[0-9]+$/
+    return regex.test(text.trim()) && text.trim().length <= 11 && text.trim().length >= 9
+        ? null
+        : 'Please enter the phone number'
+}

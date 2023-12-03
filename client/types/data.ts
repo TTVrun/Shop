@@ -8,6 +8,14 @@ export interface InfoUser {
     historyView: Array<any>
     notification: Array<Notification>
     wishList: Array<any>
+    address: {
+        province: string
+        district: string
+        commune: string
+        extrainfo: string
+    }
+    phone: string
+    accountBalance: number
     __v: number
     _id: string
 }

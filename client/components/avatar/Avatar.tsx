@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import styles from './userinfo.module.scss'
-import { InfoUser } from '@/types/data'
+import styles from './avatar.module.scss'
 import Image, { StaticImageData } from 'next/image'
 import { TbExchange } from 'react-icons/tb'
 import { ConfigModal } from '../configmodal'
@@ -8,18 +7,19 @@ import upload from '@/assets/images/upload.webp'
 import { changeAvatarApi } from '@/apis/user'
 import { useAppSelector } from '@/redux/hooks'
 import Loading from '@/app/loading'
+import { InfoUser } from '@/types/data'
 
 interface Props {
     userInfo: InfoUser
-    setToggleUpdate: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const UserInfo = ({ userInfo, setToggleUpdate }: Props) => {
+const Avatar = ({ userInfo }: Props) => {
     const token: string | null = useAppSelector((state) => state.userReducer.token)
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
     const [image, setImage] = useState<File | null>(null)
     const [link, setLink] = useState<string | StaticImageData>(upload)
+    const [avatar, setAvatar] = useState<string | StaticImageData>(userInfo.avatar)
 
     const handleClickChangeAvt = () => {
         setIsOpenModal(true)
@@ -42,8 +42,8 @@ const UserInfo = ({ userInfo, setToggleUpdate }: Props) => {
         const response = await changeAvatarApi(token as string, fromData)
         setIsLoading(false)
         if (response.success) {
-            setToggleUpdate((prev) => !prev)
             setIsOpenModal(false)
+            setAvatar(response.link)
         }
     }
 
@@ -51,12 +51,12 @@ const UserInfo = ({ userInfo, setToggleUpdate }: Props) => {
         <div className={styles.wrapper}>
             <div className={styles.avatar}>
                 <div className={styles.wimage}>
-                    <Image className={styles.image} src={userInfo.avatar} alt="Avatar" width={80} height={80} />
+                    <Image className={styles.image} src={avatar} alt="Avatar" width={100} height={100} />
                     <i onClick={handleClickChangeAvt} className={styles.icon}>
                         <TbExchange />
                     </i>
                 </div>
-                <small className={styles.name}>{userInfo.name}</small>
+                {/* <small className={styles.name}>{userInfo.name}</small> */}
             </div>
             <ConfigModal setIsOpen={setIsOpenModal} isOpen={isOpenModal}>
                 <div className={styles.notification}>
@@ -75,4 +75,4 @@ const UserInfo = ({ userInfo, setToggleUpdate }: Props) => {
     )
 }
 
-export default UserInfo
+export default Avatar

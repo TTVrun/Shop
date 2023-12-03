@@ -44,10 +44,31 @@ var userSchema = new mongoose.Schema(
             type: Boolean,
             default: false
         },
+        address: {
+            province: {
+                type: String,
+                default: '_'
+            },
+            district: {
+                type: String,
+                default: '_'
+            },
+            commune: {
+                type: String,
+                default: '_'
+            },
+            extrainfo: {
+                type: String,
+                default: '_'
+            }
+        },
+        phone: {
+            type: String,
+            default: '_'
+        },
         cart: [{ type: mongoose.Types.ObjectId, ref: 'Product' }],
         wishList: [{ type: mongoose.Types.ObjectId, ref: 'Product' }],
         historyComment: [{ type: mongoose.Types.ObjectId, ref: 'Comment' }],
-        historyView: [{ type: mongoose.Types.ObjectId, ref: 'Product' }],
         refreshToken: {
             type: String
         }

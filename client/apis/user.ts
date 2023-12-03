@@ -1,6 +1,7 @@
 import { SubmitData } from '@/types/account'
 import instance from '.'
 import { useAppSelector } from '@/redux/hooks'
+import { TBasicUserInfo } from '@/types/personal'
 
 export const signupApi = async (data: SubmitData) => {
     const response = await instance.post('user/signup', data)
@@ -36,5 +37,11 @@ export const logoutApi = async () => {
 export const changeAvatarApi = async (token: string, data: FormData) => {
     instance.defaults.headers.common['Authorization'] = `Bearer ${token}`
     const response = await instance.put('user/uploadimage', data)
+    return response.data
+}
+
+export const updateBasicInfoApi = async (token: string, data: TBasicUserInfo) => {
+    instance.defaults.headers.common['Authorization'] = `Bearer ${token}`
+    const response = await instance.put('user/updateinfo', data)
     return response.data
 }

@@ -184,11 +184,11 @@ const getUser = async (req, res, next) => {
 
 const uploadImage = async (req, res, next) => {
     try {
-        console.log(req.file)
         const response = await User.findOneAndUpdate({ _id: req.user._id }, { avatar: req.file.path })
         return res.json({
             success: response ? true : false,
-            mes: response ? 'Update image successfully' : "Can't update image"
+            mes: response ? 'Update image successfully' : "Can't update image",
+            link: req.file.path
         })
     } catch (error) {
         next(error)
@@ -209,6 +209,43 @@ const resetCountNotification = async (req, res, next) => {
     }
 }
 
+const updateBasicInfo = async (req, res, next) => {
+    try {
+        const { _id } = req.user
+        const { name, email, phone } = req.body
+
+        if (!name | !email | !phone) {
+            return res.json({
+                success: false,
+                mes: 'Missing input'
+            })
+        }
+        const alreadyEmail = await User.findOne({ email, _id: { $ne: _id } })
+        console.log(alreadyEmail)
+        if (alreadyEmail) {
+            return res.json({
+                success: false,
+                mes: 'Email already exists'
+            })
+        }
+        const response = await User.findByIdAndUpdate(_id, { name, email, phone }, { new: true })
+        const notification = await Notification.findOne({ key: 'updateSuccess' })
+        await User.findByIdAndUpdate(_id, { $inc: { countNewNotification: 1 } })
+        await User.findByIdAndUpdate(
+            _id,
+            { $push: { notification: { $each: [notification._id], $position: 0 } } },
+            { new: true }
+        )
+
+        return res.json({
+            success: response ? true : false,
+            mes: 'Update is successfully'
+        })
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
     register,
     login,
@@ -218,5 +255,6 @@ module.exports = {
     refreshToken,
     uploadImage,
     logout,
-    resetCountNotification
+    resetCountNotification,
+    updateBasicInfo
 }

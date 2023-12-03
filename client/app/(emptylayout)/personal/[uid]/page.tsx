@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './page.module.scss'
 import { NavPersonal } from '@/components/navpersonal'
 import { NotificationPersonal } from '@/components/notificationpersonal'
-import { UserInfo } from '@/components/userinfo'
+import { DetailUserInfo } from '@/components/detailuserinfo'
 
 interface Response {
     success: boolean
@@ -16,7 +16,6 @@ interface Response {
 
 const Personal = ({ params: { uid } }: { params: { uid: string } }) => {
     const token = useAppSelector((state) => state.userReducer.token)
-    const [toggleUpdateData, setToggleUpdateData] = useState<boolean>(false)
     const [data, setData] = useState<InfoUser | null>(null)
     const [idShow, setIdShow] = useState<number>(0)
 
@@ -31,7 +30,7 @@ const Personal = ({ params: { uid } }: { params: { uid: string } }) => {
             fetchData()
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [toggleUpdateData])
+    }, [])
 
     return (
         <div className={styles.wrapper}>
@@ -41,7 +40,7 @@ const Personal = ({ params: { uid } }: { params: { uid: string } }) => {
                         <NavPersonal id={idShow} setId={setIdShow} />
                     </div>
                     <div className={styles.right}>
-                        {idShow === 0 && <UserInfo setToggleUpdate={setToggleUpdateData} userInfo={data} />}
+                        {idShow === 0 && <DetailUserInfo userInfo={data} />}
                         {idShow === 1 && <div>Cart</div>}
                         {idShow === 2 && <div>Whislit</div>}
                         {idShow === 3 && <NotificationPersonal listNotification={data.notification} />}
