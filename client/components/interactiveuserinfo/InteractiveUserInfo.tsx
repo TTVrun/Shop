@@ -10,9 +10,19 @@ interface Props {
     checkValue: any
     errorMessage: TError
     setErrorMessage: React.Dispatch<React.SetStateAction<TError>>
+    typeInput?: string
 }
 
-const InteractiveUserInfo = ({ keyName, isEdit, data, setData, checkValue, errorMessage, setErrorMessage }: Props) => {
+const InteractiveUserInfo = ({
+    keyName,
+    isEdit,
+    data,
+    setData,
+    checkValue,
+    errorMessage,
+    setErrorMessage,
+    typeInput = 'text'
+}: Props) => {
     const handleChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
         setData((prev) => {
             return {
@@ -41,7 +51,6 @@ const InteractiveUserInfo = ({ keyName, isEdit, data, setData, checkValue, error
                     className={`${styles.input} ${errorMessage[keyName as keyof TError] ? styles.errorinput : ''}`}
                     // style={{ borderColor: '#16FF00', backgroundColor: 'transparent' }}
                     onChange={handleChangeValue}
-                    type="text"
                     value={data[keyName as keyof TBasicUserInfo]}
                 />
             ) : (

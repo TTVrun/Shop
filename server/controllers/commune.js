@@ -22,11 +22,11 @@ const insertCommune = async (req, res, next) => {
 
 const getDistrictByProvinceAndDistrict = async (req, res, next) => {
     try {
-        const { province, district } = req.query
+        const { province, district } = req.params
         if (!province || !district) {
             throw new Error('Missing province')
         }
-        const response = await Commune.find({ province, district })
+        const response = await Commune.find({ province, district }).select('commune')
 
         return res.json({
             success: response ? true : false,

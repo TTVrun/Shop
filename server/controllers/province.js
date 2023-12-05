@@ -15,11 +15,11 @@ const insertProvince = async (req, res, next) => {
 
 const getProvince = async (req, res, next) => {
     try {
-        const provinces = await Province.find()
+        const provinces = await Province.find().select('province')
 
         return res.json({
             success: provinces ? true : false,
-            data: provinces ? provinceData : []
+            data: provinces ? provinces : []
         })
     } catch (error) {
         next(error)

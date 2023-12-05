@@ -6,7 +6,7 @@ import { IoMdNotificationsOutline } from 'react-icons/io'
 const pathPersonal = [
     {
         icon: IoPersonOutline,
-        title: 'Information',
+        title: 'User info',
         id: 0
     },
     {

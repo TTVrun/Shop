@@ -3,6 +3,6 @@ const ctrls = require('../controllers/district')
 const { verifyAccessToken } = require('../middlewares/verifyToken')
 
 router.get('/insert', verifyAccessToken, ctrls.insertDistrict)
-router.get('/', verifyAccessToken, ctrls.getDistrictByProvince)
+router.get('/:province', verifyAccessToken, ctrls.getDistrictByProvince)
 
 module.exports = router

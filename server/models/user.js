@@ -44,24 +44,7 @@ var userSchema = new mongoose.Schema(
             type: Boolean,
             default: false
         },
-        address: {
-            province: {
-                type: String,
-                default: '_'
-            },
-            district: {
-                type: String,
-                default: '_'
-            },
-            commune: {
-                type: String,
-                default: '_'
-            },
-            extrainfo: {
-                type: String,
-                default: '_'
-            }
-        },
+        address: [{ type: mongoose.Types.ObjectId, ref: 'Location' }],
         phone: {
             type: String,
             default: '_'

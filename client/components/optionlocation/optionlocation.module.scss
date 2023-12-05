@@ -1,0 +1,47 @@
+.wrapper {
+    width: 100%;
+
+    .title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+
+    .container {
+        position: relative;
+        .text {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            outline: none;
+            min-height: 40px;
+        }
+
+        .text:hover {
+            border-color: #000;
+        }
+
+        .list {
+            border: 1px solid #ccc;
+            max-height: 200px;
+            width: 100%;
+            overflow-y: scroll;
+            position: absolute;
+
+            &::-webkit-scrollbar {
+                width: 1px;
+            }
+
+            .item {
+                padding: 6px 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+}

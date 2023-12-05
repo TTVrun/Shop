@@ -1,6 +1,5 @@
 import { SubmitData } from '@/types/account'
 import instance from '.'
-import { useAppSelector } from '@/redux/hooks'
 import { TBasicUserInfo } from '@/types/personal'
 
 export const signupApi = async (data: SubmitData) => {

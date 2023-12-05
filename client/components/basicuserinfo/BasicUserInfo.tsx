@@ -4,20 +4,14 @@ import { InfoUser } from '@/types/data'
 import { InteractiveUserInfo } from '../interactiveuserinfo'
 import { interactiveKeyName } from '@/constant/interactiveuserinfo'
 import { TBasicUserInfo, TError } from '@/types/personal'
-import { email, min2, phone, required } from '@/utils/handlestring'
 import { updateBasicInfoApi } from '@/apis/user'
 import { useAppSelector } from '@/redux/hooks'
 import { ResponseSuccess } from '@/types/api'
 import { Modal } from '../modal'
+import { checkValueMethod } from '@/constant/basicuserinfo'
 
 interface Props {
     userInfo: InfoUser
-}
-
-const checkValueMethod = {
-    name: [required, min2],
-    email: [required, email],
-    phone: [phone]
 }
 
 const BasicUserInfo = ({ userInfo }: Props) => {
@@ -68,7 +62,12 @@ const BasicUserInfo = ({ userInfo }: Props) => {
         const listError = Object.keys(tempData).map((key) => {
             return checkValue(key)
         })
-        if (listError.every((item) => item === null)) {
+        if (
+            listError.every((item) => item === null) &&
+            !Object.keys(tempData).every(
+                (key) => tempData[key as keyof typeof tempData] === editData[key as keyof typeof editData]
+            )
+        ) {
             const response: ResponseSuccess = await updateBasicInfoApi(token as string, tempData)
             if (response.success) {
                 setIsOpenModal(true)
@@ -81,6 +80,13 @@ const BasicUserInfo = ({ userInfo }: Props) => {
                 setTextModal(response.mes)
                 setIsSuccess(false)
             }
+        } else if (
+            listError.every((item) => item === null) &&
+            Object.keys(tempData).every(
+                (key) => tempData[key as keyof typeof tempData] === editData[key as keyof typeof editData]
+            )
+        ) {
+            handleCancelChange()
         }
     }
 
@@ -105,8 +111,8 @@ const BasicUserInfo = ({ userInfo }: Props) => {
                     data={tempData}
                     setData={setTempData}
                 />
-                <div className={styles.wblance}>
-                    <h4 className={styles.title}>Account Blance</h4>
+                <div className={styles.wbalance}>
+                    <h4 className={styles.title}>Account Balance</h4>
                     <span className={styles.content}>{`$${userInfo.accountBalance} USD`}</span>
                 </div>
                 <InteractiveUserInfo

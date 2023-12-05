@@ -18,11 +18,11 @@ const insertDistrict = async (req, res, next) => {
 
 const getDistrictByProvince = async (req, res, next) => {
     try {
-        const { province } = req.query
+        const { province } = req.params
         if (!province) {
             throw new Error('Missing province')
         }
-        const response = await District.find({ province })
+        const response = await District.find({ province }).select('-__v -province')
 
         return res.json({
             success: response ? true : false,

@@ -12,6 +12,8 @@ export default function Home() {
         <div>
             <h2>This is home page</h2>
             <Link href="/account/signin">Sign in</Link>
+            <br />
+            <Link href="/admin">admin</Link>
         </div>
     )
 }

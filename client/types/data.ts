@@ -81,3 +81,18 @@ export interface TComment {
     _id: string
     replies: TComment[]
 }
+
+export interface TProvince {
+    province: string
+    _id: string
+}
+
+export interface TDistrict {
+    district: string
+    _id: string
+}
+
+export interface TCommune {
+    commune: string
+    _id: string
+}
