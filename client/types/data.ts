@@ -8,16 +8,20 @@ export interface InfoUser {
     historyView: Array<any>
     notification: Array<Notification>
     wishList: Array<any>
-    address: {
-        province: string
-        district: string
-        commune: string
-        extrainfo: string
-    }
+    address: TLocation[]
     phone: string
     accountBalance: number
     __v: number
     _id: string
+}
+
+export interface TLocation {
+    _id: string
+    province: string
+    district: string
+    commune: string
+    extrainfo: string
+    __v: number
 }
 
 export interface Notification {
@@ -95,4 +99,11 @@ export interface TDistrict {
 export interface TCommune {
     commune: string
     _id: string
+}
+
+export interface TLocationDataSubmit {
+    province: string
+    district: string
+    commune: string
+    extrainfo: string
 }

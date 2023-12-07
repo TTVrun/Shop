@@ -13,6 +13,10 @@ var locationSchema = new mongoose.Schema({
     commune: {
         type: String,
         required: true
+    },
+    extrainfo: {
+        type: String,
+        required: true
     }
 })
 

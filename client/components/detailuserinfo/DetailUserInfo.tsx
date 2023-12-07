@@ -19,7 +19,7 @@ const DetailUserInfo = ({ userInfo }: Props) => {
                 <BasicUserInfo userInfo={userInfo} />
             </div>
             <div className={styles.location}>
-                <Location />
+                <Location userInfo={userInfo} />
             </div>
         </div>
     )

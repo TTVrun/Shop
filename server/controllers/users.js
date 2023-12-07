@@ -158,6 +158,9 @@ const getCurrent = async (req, res, next) => {
                 path: 'notification',
                 select: '-__v -key'
             })
+            .populate({
+                path: 'address'
+            })
 
         //
         return res.json({
